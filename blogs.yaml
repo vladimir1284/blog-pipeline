@@ -1,0 +1,46 @@
+blogs:
+  - slug: nitza-develop
+    nombre: "Nitza Develop"
+    repo: "https://github.com/usuario/tech-blog"
+    rama: main
+    carpeta_posts: "src/content/blog"
+    idiomas: [es, en]
+    marca:
+      sector: "Desarrollo de software"
+      voz: "Técnica y cercana"
+      publico: "Desarrolladores web y arquitectos de software"
+      evitar: ["promesas sin sustento"]
+      cta_tipica: "Seguirnos en nuestras redes sociales, comentarnos sus opiniones"
+    # marca_en: null  # usar los mismos valores que marca; no hay diferencia declarada
+
+  - slug: metis-host
+    nombre: "Metis Host"
+    repo: "https://github.com/Nitza-Developement/moodle_landing"
+    rama: main
+    carpeta_posts: "src/content/blog"
+    idiomas: [es, en]
+    marca:
+      sector: "Hosting / Cloud"
+      voz: "Directa y profesional"
+      publico: "Centros educativos, escuelas de preparación para oposiciones, cursistas en general"
+      publico_segmentos:  # el redactor debe indicar a cuál apunta cada post
+        - "centros educativos (decisores institucionales)"
+        - "academias de oposiciones (decisores institucionales)"
+        - "cursistas individuales (usuarios finales)"
+      evitar: ["promesas sin sustento", "jerga innecesariamente compleja"]
+      cta_tipica: "Crear una cuenta gratuita o contactar a soporte técnico"
+    # marca_en: null
+
+  - slug: electro
+    nombre: "Electro"
+    repo: "https://github.com/vladimir1284/electric-web"
+    rama: main
+    carpeta_posts: "src/content/blog"
+    idiomas: [es, en]
+    marca:
+      sector: "Landing page y servicios digitales para contratistas eléctricos"
+      voz: "Directa y profesional"
+      publico: "Electricistas y pequeños contratistas"
+      evitar: ["promesas sin sustento", "jerga innecesariamente compleja"]
+      cta_tipica: "Contactarnos para consultar un presupuesto o aclarar dudas sobre el alcance de nuestros servicios"
+    # marca_en: null
