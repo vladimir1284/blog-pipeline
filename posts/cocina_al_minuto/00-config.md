@@ -1,7 +1,7 @@
 ---
 blog_slug: nitza-develop
 tipo_post: C
-status: imagenes_subidas
+status: publicado
 ---
 
 # Tema
