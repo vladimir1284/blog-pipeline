@@ -1,7 +1,7 @@
 blogs:
   - slug: nitza-develop
     nombre: "Nitza Develop"
-    repo: "https://github.com/usuario/tech-blog"
+    repo: "https://github.com/vladimir1284/nitza-landing"
     rama: main
     carpeta_posts: "src/content/blog"
     idiomas: [es, en]
