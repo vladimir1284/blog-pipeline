@@ -1,2 +1,5 @@
 .claude/settings.local.json
 .claude/settings.local.json.tmp.*
+
+.env
+posts/*/images/raw/
