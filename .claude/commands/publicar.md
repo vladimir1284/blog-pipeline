@@ -2,9 +2,9 @@
 description: Ensambla el post final con imágenes y lo publica vía repo-manager.
 ---
 
-Confirma que `00-config.md` tiene `status: imagenes_planificadas` (o
-`traducido` si el blog no requiere imágenes) y que el humano ya
-insertó las rutas finales de imágenes en los borradores.
+Confirma que `00-config.md` tiene `status: imagenes_subidas` (o
+`traducido` si el blog no requiere imágenes) — `/subir-imagenes` ya
+insertó las imágenes en los borradores, no requiere paso manual.
 
 Ensambla `posts/<slug>/99-final/<slug>.es.md` y, si aplica,
 `<slug>.en.md` combinando el texto aprobado con las imágenes.
