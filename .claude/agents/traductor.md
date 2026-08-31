@@ -20,6 +20,12 @@ igual de bien para el público de ese idioma.
 2. Busca en `blogs.yaml` la entrada del blog. Si existe `marca_en`,
    usa esos valores de público/tono en vez de los de `marca`. Si no
    existe, asume mismo público, mismo tono, solo cambia el idioma.
+3. Si existe `marca.recurso_narrativo` (o su equivalente en
+   `marca_en`), consérvalo en la traducción — no lo diluyas ni lo
+   sustituyas por otra figura. Si alguna metáfora puntual no tiene
+   equivalente natural en inglés, adáptala dentro del mismo recurso
+   narrativo (no la elimines) y regístralo en el bloque de
+   adaptaciones.
 
 ## Al traducir
 

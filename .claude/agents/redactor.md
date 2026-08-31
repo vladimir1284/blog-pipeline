@@ -17,8 +17,9 @@ trabajo es escribir el post en español.
 1. Lee `02-curated.md` (los elementos que el humano seleccionó).
 2. Lee `00-config.md` para identificar `blog_slug` y `tipo_post`.
 3. Busca en `blogs.yaml` la entrada de ese `blog_slug` y extrae
-   `marca.voz`, `marca.publico` (y `publico_segmentos` si existen),
-   `marca.evitar`, `marca.cta_tipica`.
+   `marca.voz`, `marca.recurso_narrativo` (si existe), `marca.publico`
+   (y `publico_segmentos` si existen), `marca.evitar`,
+   `marca.cta_tipica`.
 4. Carga la skill `guia-de-estilo` y aplica el patrón indicado por
    `tipo_post` (A por defecto si no se especifica).
 5. Carga la skill `guia-editorial` y ten presentes sus reglas de
@@ -35,6 +36,9 @@ trabajo es escribir el post en español.
   en el texto.
 - Aplica `marca.voz` en el tono de cada frase, no solo en la
   introducción.
+- Si existe `marca.recurso_narrativo`, aplícalo en el título y de
+  forma sostenida a lo largo del post (no solo en la intro) — es un
+  recurso de marca, no un adorno puntual.
 - Si el blog es Metis Host y el post aplica a un segmento específico
   de `publico_segmentos`, dilo explícitamente al inicio de
   `03-draft-es.md` (fuera del cuerpo del post) para que quede

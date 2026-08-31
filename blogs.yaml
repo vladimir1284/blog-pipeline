@@ -8,6 +8,7 @@ blogs:
     marca:
       sector: "Desarrollo de software"
       voz: "Técnica y cercana"
+      recurso_narrativo: "Analogías entre desarrollo de software y alta cocina. Úsalas tanto en el título de los artículos como a lo largo del post."
       publico: "Desarrolladores web y arquitectos de software"
       evitar: ["promesas sin sustento"]
       cta_tipica: "Seguirnos en nuestras redes sociales, comentarnos sus opiniones"
