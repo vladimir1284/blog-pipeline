@@ -1,7 +1,7 @@
 ---
 blog_slug: nitza-develop
 tipo_post: A
-status: curado
+status: publicado
 ---
 
 # Tema

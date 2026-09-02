@@ -1,0 +1,24 @@
+# Revisión crítica: La receta que nadie escribió (migración de motor de comisiones)
+
+## Resumen
+Aprobado sin cambios. (Re-revisión tras corrección manual sobre la revisión anterior, que tenía 1 BLOQUEO y 3 ADVERTENCIAS — ver historial más abajo. Los cuatro hallazgos quedaron resueltos.)
+
+## Bloqueos
+Ninguno.
+
+## Advertencias
+Ninguna abierta.
+
+## Verificaciones realizadas
+
+- **Cifra de multa TSB Bank, £48.65 millones (línea 31)** — verificada de forma independiente (búsqueda propia adicional a la ya hecha en la revisión anterior): comunicados oficiales de FCA (fca.org.uk) y Bank of England (bankofengland.co.uk), más cobertura de CNBC, Computing y Retail Banker International, confirman £48.65M como la multa conjunta FCA (£29.75M) + PRA (£18.9M) tras un 30% de descuento por acuerdo. La corrección aplicada al borrador es correcta. **Bloqueo original resuelto.**
+- **Ausencia de cualquier otra mención a "£62 millones" en el archivo** — verificada por lectura completa de `03-draft-es.md`: no queda ningún residuo de la cifra incorrecta; la única cifra de multa presente en todo el documento es £48.65 millones (línea 31). La cifra de compensaciones (£32 millones) no se tocó y sigue siendo correcta, sin conflicto con el cambio.
+- **"El caso más citado en la industria bancaria" → "Uno de los casos mejor documentados en la industria bancaria" (línea 31)** — verificada por trazabilidad: el nuevo texto coincide casi textualmente con `01-research.md` ("el caso público mejor documentado de los riesgos de un corte total sin plan de contingencia adecuado"), a diferencia de la versión anterior, que afirmaba frecuencia de citación sin fuente que lo respaldara. El superlativo comparativo sin sustento queda eliminado. **Advertencia original resuelta.**
+- **Cierre: eliminación de "un TSB Bank particular en cada industria" (antigua línea 43)** — verificada: la frase ya no aparece en ningún punto del cierre ni del resto del post. El párrafo de cierre actual ("Si estás por migrar un sistema legacy... es lo que separa un corte de servicio bien digerido de uno que termina en pánico de madrugada.") no reintroduce el paralelo directo con TSB Bank que el propio texto había descartado explícitamente dos párrafos antes. **Advertencia original resuelta.**
+- **CTA del cierre, formato implícito vs. explícito** — el nuevo cierre ("Si esto te suena familiar, así lo resolvimos nosotros: cuéntanos tu versión en los comentarios, o síguenos para más casos como este.") retoma casi textualmente el ejemplo que la propia guía de estilo da para el Patrón A ("si esto te suena familiar, así lo resolvimos"), y aloja el llamado a la acción concreto (comentar / seguir en redes, coherente con `marca.cta_tipica` de nitza-develop) dentro de esa misma frase, en tono declarativo — no como pregunta directa ni como línea aparte tipo banner. Sigue habiendo, en sentido estricto, una tensión estructural entre la regla común 4 (exige un CTA explícito coherente con `marca.cta_tipica`) y la instrucción del Patrón A (CTA "implícito", "nunca forzado tipo banner"); esa tensión es inherente a cómo están escritas ambas reglas, no un defecto de esta redacción puntual. Dentro de esa restricción, el cierre actual es la resolución razonable disponible: usa el gancho implícito sugerido por la guía en vez de una pregunta directa. Se considera resuelta la advertencia original (que señalaba específicamente el formato de pregunta directa). **Advertencia original resuelta**, con esta salvedad de diseño anotada para conocimiento del humano, no como bloqueo ni como nueva advertencia.
+- **Repaso general del resto del archivo por inconsistencias nuevas** — no se detectan. La cifra corregida no afecta ninguna otra referencia numérica del post (compensaciones £32M, salida del CEO, ~$100 USD de error residual, 4 meses de ciclos siguen intactos y consistentes entre sí). El recurso narrativo de cocina (`marca.recurso_narrativo` de nitza-develop) se mantiene coherente en todo el texto, incluido el título. `marca.evitar` ("promesas sin sustento") no se viola en ningún punto. Un solo CTA en todo el post, sin duplicados. No hay comparaciones negativas contra competidores nombrados. No se identifica al cliente. No se detecta similitud estructural alta con ninguna fuente individual (el post sigue sintetizando varias fuentes distintas entretejidas con la anécdota propia, como ya se había constatado en la revisión anterior).
+
+## Historial (revisión anterior, para contexto)
+La revisión anterior (antes de la corrección manual) tenía:
+- 1 BLOQUEO: cifra de multa TSB Bank incorrecta (£62M en vez de £48.65M) — **resuelto**.
+- 3 ADVERTENCIAS: (1) cierre reintroducía el paralelo directo con TSB ("un TSB Bank particular en cada industria") — **resuelta**; (2) superlativo "el caso más citado" sin respaldo exacto en la fuente — **resuelta**; (3) CTA de cierre en formato de pregunta directa, en tensión con el CTA implícito que pide el Patrón A — **resuelta**.
